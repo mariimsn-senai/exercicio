@@ -1,0 +1,11 @@
+C:\Users\44879682837\Documents\exercicio\pardois\obj\Debug\netcoreapp2.2\pardois.csprojAssemblyReference.cache
+C:\Users\44879682837\Documents\exercicio\pardois\obj\Debug\netcoreapp2.2\pardois.csproj.CoreCompileInputs.cache
+C:\Users\44879682837\Documents\exercicio\pardois\obj\Debug\netcoreapp2.2\pardois.AssemblyInfoInputs.cache
+C:\Users\44879682837\Documents\exercicio\pardois\obj\Debug\netcoreapp2.2\pardois.AssemblyInfo.cs
+C:\Users\44879682837\Documents\exercicio\pardois\bin\Debug\netcoreapp2.2\pardois.deps.json
+C:\Users\44879682837\Documents\exercicio\pardois\bin\Debug\netcoreapp2.2\pardois.runtimeconfig.json
+C:\Users\44879682837\Documents\exercicio\pardois\bin\Debug\netcoreapp2.2\pardois.runtimeconfig.dev.json
+C:\Users\44879682837\Documents\exercicio\pardois\bin\Debug\netcoreapp2.2\pardois.dll
+C:\Users\44879682837\Documents\exercicio\pardois\bin\Debug\netcoreapp2.2\pardois.pdb
+C:\Users\44879682837\Documents\exercicio\pardois\obj\Debug\netcoreapp2.2\pardois.dll
+C:\Users\44879682837\Documents\exercicio\pardois\obj\Debug\netcoreapp2.2\pardois.pdb
