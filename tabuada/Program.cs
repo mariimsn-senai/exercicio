@@ -6,13 +6,13 @@ namespace tabuada
     {
         static void Main(string[] args)
             {
-                int formula, contador, numero;
 
-                for (int i=1; i < 100; i++); 
-            {
-                Console.WriteLine(formula =  numero * contador);
-                Console.WriteLine(numero + " * " + contador + " = " + formula);
-            }
-        }
+                for (int i=1; i <=10; i++){
+                for(int j = 1; j <= 10; j++){
+                Console.Write($"{i,-2} x {j,-2}= {i * j,-3}");
+             }
+             Console.WriteLine();
+           }
+      }
     }
 }
