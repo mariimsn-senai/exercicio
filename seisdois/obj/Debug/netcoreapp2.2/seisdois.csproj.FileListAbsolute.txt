@@ -1,0 +1,4 @@
+C:\Users\44879682837\Documents\exercicio\seisdois\obj\Debug\netcoreapp2.2\seisdois.csprojAssemblyReference.cache
+C:\Users\44879682837\Documents\exercicio\seisdois\obj\Debug\netcoreapp2.2\seisdois.csproj.CoreCompileInputs.cache
+C:\Users\44879682837\Documents\exercicio\seisdois\obj\Debug\netcoreapp2.2\seisdois.AssemblyInfoInputs.cache
+C:\Users\44879682837\Documents\exercicio\seisdois\obj\Debug\netcoreapp2.2\seisdois.AssemblyInfo.cs

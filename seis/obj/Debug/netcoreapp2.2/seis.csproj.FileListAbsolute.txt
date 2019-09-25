@@ -1,0 +1,11 @@
+C:\Users\44879682837\Documents\exercicio\seis\obj\Debug\netcoreapp2.2\seis.csprojAssemblyReference.cache
+C:\Users\44879682837\Documents\exercicio\seis\obj\Debug\netcoreapp2.2\seis.csproj.CoreCompileInputs.cache
+C:\Users\44879682837\Documents\exercicio\seis\obj\Debug\netcoreapp2.2\seis.AssemblyInfoInputs.cache
+C:\Users\44879682837\Documents\exercicio\seis\obj\Debug\netcoreapp2.2\seis.AssemblyInfo.cs
+C:\Users\44879682837\Documents\exercicio\seis\bin\Debug\netcoreapp2.2\seis.deps.json
+C:\Users\44879682837\Documents\exercicio\seis\bin\Debug\netcoreapp2.2\seis.runtimeconfig.json
+C:\Users\44879682837\Documents\exercicio\seis\bin\Debug\netcoreapp2.2\seis.runtimeconfig.dev.json
+C:\Users\44879682837\Documents\exercicio\seis\bin\Debug\netcoreapp2.2\seis.dll
+C:\Users\44879682837\Documents\exercicio\seis\bin\Debug\netcoreapp2.2\seis.pdb
+C:\Users\44879682837\Documents\exercicio\seis\obj\Debug\netcoreapp2.2\seis.dll
+C:\Users\44879682837\Documents\exercicio\seis\obj\Debug\netcoreapp2.2\seis.pdb

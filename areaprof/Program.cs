@@ -33,7 +33,13 @@ namespace areaprof
                double areaQuad = ladoQuad * ladoQuad;
                Console.WriteLine("A área do quadrado é: " + areaQuad);
                break;
-              
+               case "3":
+               Console.WriteLine("Área do Losango");
+               Console.Write("Qual o comprimento do losango? ");
+               double comprimLos = double.Parse(Console.ReadLine());
+               double areaLos = comprimLos * comprimLos / 2;
+               Console.WriteLine("A área do losango é: " + areaLos);
+               break;
            }
 
         }
