@@ -2,3 +2,10 @@ C:\Users\44879682837\Documents\exercicio\seisdois\obj\Debug\netcoreapp2.2\seisdo
 C:\Users\44879682837\Documents\exercicio\seisdois\obj\Debug\netcoreapp2.2\seisdois.csproj.CoreCompileInputs.cache
 C:\Users\44879682837\Documents\exercicio\seisdois\obj\Debug\netcoreapp2.2\seisdois.AssemblyInfoInputs.cache
 C:\Users\44879682837\Documents\exercicio\seisdois\obj\Debug\netcoreapp2.2\seisdois.AssemblyInfo.cs
+C:\Users\44879682837\Documents\exercicio\seisdois\bin\Debug\netcoreapp2.2\seisdois.deps.json
+C:\Users\44879682837\Documents\exercicio\seisdois\bin\Debug\netcoreapp2.2\seisdois.runtimeconfig.json
+C:\Users\44879682837\Documents\exercicio\seisdois\bin\Debug\netcoreapp2.2\seisdois.runtimeconfig.dev.json
+C:\Users\44879682837\Documents\exercicio\seisdois\bin\Debug\netcoreapp2.2\seisdois.dll
+C:\Users\44879682837\Documents\exercicio\seisdois\bin\Debug\netcoreapp2.2\seisdois.pdb
+C:\Users\44879682837\Documents\exercicio\seisdois\obj\Debug\netcoreapp2.2\seisdois.dll
+C:\Users\44879682837\Documents\exercicio\seisdois\obj\Debug\netcoreapp2.2\seisdois.pdb
