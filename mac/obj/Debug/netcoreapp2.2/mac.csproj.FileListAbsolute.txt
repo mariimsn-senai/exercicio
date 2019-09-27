@@ -1,0 +1,11 @@
+C:\Users\44879682837\Documents\exercicio\mac\bin\Debug\netcoreapp2.2\mac.deps.json
+C:\Users\44879682837\Documents\exercicio\mac\bin\Debug\netcoreapp2.2\mac.runtimeconfig.json
+C:\Users\44879682837\Documents\exercicio\mac\bin\Debug\netcoreapp2.2\mac.runtimeconfig.dev.json
+C:\Users\44879682837\Documents\exercicio\mac\bin\Debug\netcoreapp2.2\mac.dll
+C:\Users\44879682837\Documents\exercicio\mac\bin\Debug\netcoreapp2.2\mac.pdb
+C:\Users\44879682837\Documents\exercicio\mac\obj\Debug\netcoreapp2.2\mac.csprojAssemblyReference.cache
+C:\Users\44879682837\Documents\exercicio\mac\obj\Debug\netcoreapp2.2\mac.csproj.CoreCompileInputs.cache
+C:\Users\44879682837\Documents\exercicio\mac\obj\Debug\netcoreapp2.2\mac.AssemblyInfoInputs.cache
+C:\Users\44879682837\Documents\exercicio\mac\obj\Debug\netcoreapp2.2\mac.AssemblyInfo.cs
+C:\Users\44879682837\Documents\exercicio\mac\obj\Debug\netcoreapp2.2\mac.dll
+C:\Users\44879682837\Documents\exercicio\mac\obj\Debug\netcoreapp2.2\mac.pdb

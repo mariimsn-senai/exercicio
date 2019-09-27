@@ -6,15 +6,16 @@ namespace hello
     {
         static void Main(string[] args)
         {
-            int num1 = 0;
-            int num2 = 0;
+            string num1; 
+            string num2;
+            string num3;
 
             Console.WriteLine("Digite o 1° número:");
-            nun1 = Console.Readline();
+            num1 = Console.ReadLine();
             Console.WriteLine("Digite o 2° número");
-            nun2 = Console.Readline();
+            num2 = Console.ReadLine();
             Console.WriteLine("Digite o operador:");
-            nun3 = Console.Readline();
+            num3 = Console.ReadLine();
 
             Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
             Console.WriteLine($"{num1} - {num2} = {num1 - num2}");

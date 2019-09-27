@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\44879682837\\Documents\\exercicio\\hello\\hello.csproj",
-      "projectName": "hello",
-      "projectPath": "C:\\Users\\44879682837\\Documents\\exercicio\\hello\\hello.csproj",
+      "projectUniqueName": "C:\\Users\\44879682837\\Documents\\exercicio\\mac\\mac.csproj",
+      "projectName": "mac",
+      "projectPath": "C:\\Users\\44879682837\\Documents\\exercicio\\mac\\mac.csproj",
       "packagesPath": "C:\\Users\\44879682837\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\44879682837\\Documents\\exercicio\\hello\\obj\\",
+      "outputPath": "C:\\Users\\44879682837\\Documents\\exercicio\\mac\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
