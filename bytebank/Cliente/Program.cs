@@ -4,6 +4,10 @@ namespace ByteBank.Cliente
 {
     class Program
     {
+        #region Cadastro
+        #region Cadastro do cliente
+            
+            
         static void Main(string[] args)
         {
             System.Console.WriteLine("ByteBank - cadastro de Clientes ");
@@ -32,22 +36,50 @@ namespace ByteBank.Cliente
                     Console.WriteLine("Senha inválida");
                 }
             } while (!TrocouSenha);
+            System.Console.WriteLine();
 
+
+        #endregion
             System.Console.WriteLine("Conta Corrente");
-            Console.WriteLine("Digite o nome do titular: ");
-            string Titular = Console.ReadLine();
             Console.WriteLine("Digite a sua agencia: ");
-            string Agencia = Console.ReadLine();
-            Console.WriteLine("Digite o numero: ");
-            string Numero = Console.ReadLine();
+            int Agencia = int.Parse(Console.ReadLine());
+            Console.WriteLine("Entre com a conta: ");
+            int conta = int.Parse(Console.ReadLine());
 
-            contacorrente cliente1 = new contacorrente(Titular, Agencia, Numero);
 
+            contacorrente contacorrente = new contacorrente(Agencia,conta,cliente1);
+            double saldo;
             do{
-                
+                Console.Write("Entre com o saldo ");
+                saldo = double.Parse(Console.ReadLine());
+                if (saldo >= 0) {
+                    contacorrente.saldo = saldo;
+                } else {
+                    Console.WriteLine("Valor do saldo deve ser positivo");
+                }
+            }while(saldo < 0);
+            Console.WriteLine();
+        #endregion
+
+        Cliente cliente2 = new Cliente(Nome, Cpf, Email);
+
+            
+            
+          
+            
+                }
             }
+        
+            
+
+
+
+
+            
+
         }
-    }
-}
+    
+
+
 
 
