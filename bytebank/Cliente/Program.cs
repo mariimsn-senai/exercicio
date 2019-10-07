@@ -39,13 +39,13 @@ namespace ByteBank.Cliente
             System.Console.WriteLine();
 
 
-        #endregion
             System.Console.WriteLine("Conta Corrente");
             Console.WriteLine("Digite a sua agencia: ");
             int Agencia = int.Parse(Console.ReadLine());
             Console.WriteLine("Entre com a conta: ");
             int conta = int.Parse(Console.ReadLine());
 
+        #endregion
 
             contacorrente contacorrente = new contacorrente(Agencia,conta,cliente1);
             double saldo;
@@ -60,8 +60,20 @@ namespace ByteBank.Cliente
             }while(saldo < 0);
             Console.WriteLine();
         #endregion
+        
 
-        Cliente cliente2 = new Cliente(Nome, Cpf, Email);
+        Cliente cliente2 = new Cliente("Cesar","5454454545","1@a.com");
+        contacorrente contacorrente2 = new contacorrente("123","321",cliente2);
+
+        #region Deposito
+         Cliente1 usuario = contacorrente.Titular:
+         System.Console.WriteLine("Byte - Depósito em Conta ");
+         System.Console.WriteLine($"Bem Vindo - {usuario.Nome}");
+         System.Console.WriteLine($"Agencia {contacorrente1.Agente} conta: {contacorrente1.numero}");
+         System.Console.WriteLine($"salto: {contacorrente.saldo}");
+         System.Console.WriteLine($"");
+
+        #endregion
 
             
             
