@@ -17,32 +17,51 @@ namespace SENAIzinho
 
         public void AlocarAluno (string NomeAluno)
         {
-            this.NomeAluno = NomeAluno;
-
+        if(capacidadeAtual > 10)
+            {
             Alunos[capacidadeTotal - 1] = NomeAluno;
 
             capacidadeTotal = capacidadeTotal - 1;
+            System.Console.WriteLine("cadastro com sucesso");
+            }
+            else
+            {
+                System.Console.WriteLine("cadastro invalido");
+            }
+
             
         }
     
 
         public void RemoverAluno (string Alunos)
         {
-        if ((index < 0) || (index > todoList.Count - 1))
+            string index;
+        if (Alunos.ToLower() == "x")
                 {
+                    break;
+                }
+                else
+                {
+                    index = string.Parse(Alunos) - 1;
+                }
 
-                    string nome;
-                    System.Console.WriteLine("Nome do Aluno: ");
-                    string nome = Console.ReadLine();
-                    Alunos.RemoveAt(nome);
-                }else {
+                if ((index < 0) || (index > Alunos.Count - 1))
+                {
+                    System.Console.WriteLine("ID Inválido!");
+                    System.Console.WriteLine("Pressione <ENTER> para continuar");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    todoList.RemoveAt(index);
                 }
         }
-        }
+        
 
-        public void MostrarAlunos ()
+        public void MostrarAlunos()
         {
 
         }
 
     }
+}

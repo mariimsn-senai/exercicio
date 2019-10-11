@@ -1,3 +1,4 @@
+using System;
 namespace SENAIzinho
 {
     public class Aluno

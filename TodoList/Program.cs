@@ -19,7 +19,7 @@ namespace TodoList
 
                 foreach (var line in todoFile)
                 {
-                    string[] item = line.Split();
+                    string[] item = line.Split(",");
                     string titulo = item[0].Replace("\"", "");
                     //o que voce quer substuir no codigo, se não escrever nada no "" ele só apaga
                     string nota = item[1].Replace("\"", "");
@@ -42,7 +42,7 @@ namespace TodoList
                 Console.Clear();
                 System.Console.WriteLine("TODO LIST");
                 System.Console.WriteLine();
-                ListaItens (todoList);
+                ListaItens(todoList);
                 System.Console.WriteLine();
                 System.Console.WriteLine("Escolha uma opção:");
                 System.Console.WriteLine();
@@ -57,10 +57,12 @@ namespace TodoList
                     case 1:
                         AddItem(todoList);
                         break;
-
-
                     case 2:
                         RemoveItem(todoList);
+                        break;
+                    case 3:
+                        System.Console.WriteLine("tchau");
+                        SaveItem(todoList, filePath);
                         break;
                     default:
                         System.Console.WriteLine("opção invalida");
@@ -75,11 +77,11 @@ namespace TodoList
             int count = 1;
             System.Console.WriteLine("Todo List");
             System.Console.WriteLine();
-            System.Console.WriteLine($"ID {"",2} Titulo{"", 12} Notas");
+            System.Console.WriteLine($"ID {"",2} Titulo{"",12} Notas");
             foreach (TodoItem item in todoList)
             {
-                System.Console.WriteLine($"{count, 3}: {item.Titulo, -15} - {item.Notas}");
-                count ++;
+                System.Console.WriteLine($"{count,3}: {item.Titulo,-15} - {item.Notas}");
+                count++;
             }
         }
         public static void AddItem(List<TodoItem> todoList)
@@ -99,11 +101,12 @@ namespace TodoList
         public static void RemoveItem(List<TodoItem> todoList)
         {
             int index = 0;
-            do {
+            do
+            {
                 Console.Clear();
                 System.Console.WriteLine("Remove Itens");
                 System.Console.WriteLine();
-                ListaItens (todoList);
+                ListaItens(todoList);
                 System.Console.WriteLine();
                 System.Console.WriteLine("Digite o ID ou x para terminar.");
                 System.Console.Write("Id: ");
@@ -112,7 +115,9 @@ namespace TodoList
                 if (id.ToLower() == "x")
                 {
                     break;
-                }else {
+                }
+                else
+                {
                     index = int.Parse(id) - 1;
                 }
 
@@ -121,10 +126,44 @@ namespace TodoList
                     System.Console.WriteLine("ID Inválido!");
                     System.Console.WriteLine("Pressione <ENTER> para continuar");
                     Console.ReadLine();
-                }else {
+                }
+                else
+                {
                     todoList.RemoveAt(index);
                 }
-            }while (true);
+            } while (true);
         }
+        public static void SaveItem(List<TodoItem> lista, string filePath)
+        {
+            List<string> linhas = new List<string>();
+            linhas.Add("tile,notas");
+            foreach (TodoItem item in lista)
+            {
+                string titulo = "\"" + item.Titulo + "\"";
+                string nota = "\"" + item.Notas + "\"";
+                linhas.Add(titulo + "," + nota);
+            }
+            string tryAgain = "n";
+            do
+            {
+                try
+                {
+                    File.WriteAllLines(filePath, linhas);
+                }
+                catch (IOException e)
+                {
+                    Console.WriteLine("Erro na gravação do arquivo.");
+                    System.Console.WriteLine(e.Message);
+                    do
+                    {
+                        System.Console.WriteLine("Desejar tentar novamente?");
+                        tryAgain = Console.ReadLine().ToLower();
+
+                    } while (tryAgain == "s" || tryAgain == "n");
+                }
+            } while (tryAgain != "n");
+        }
+
     }
 }
+

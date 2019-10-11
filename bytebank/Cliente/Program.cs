@@ -5,7 +5,6 @@ namespace ByteBank.Cliente
     class Program
     {
         #region Cadastro
-        #region Cadastro do cliente
             
             
         static void Main(string[] args)
@@ -19,7 +18,7 @@ namespace ByteBank.Cliente
             string Email = Console.ReadLine();
 
             Cliente cliente1 = new Cliente(Nome, Cpf, Email);
-
+            
             bool TrocouSenha = false;
 
             do
@@ -37,15 +36,17 @@ namespace ByteBank.Cliente
                 }
             } while (!TrocouSenha);
             System.Console.WriteLine();
+        #endregion
 
+        #region Cadastro do cliente
 
+            Console.Clear();
             System.Console.WriteLine("Conta Corrente");
             Console.WriteLine("Digite a sua agencia: ");
             int Agencia = int.Parse(Console.ReadLine());
             Console.WriteLine("Entre com a conta: ");
             int conta = int.Parse(Console.ReadLine());
 
-        #endregion
 
             contacorrente contacorrente = new contacorrente(Agencia,conta,cliente1);
             double saldo;
@@ -58,25 +59,31 @@ namespace ByteBank.Cliente
                     Console.WriteLine("Valor do saldo deve ser positivo");
                 }
             }while(saldo < 0);
+            System.Console.WriteLine("Saldo Atualizado! ");
             Console.WriteLine();
         #endregion
         
 
         Cliente cliente2 = new Cliente("Cesar","5454454545","1@a.com");
-        contacorrente contacorrente2 = new contacorrente("123","321",cliente2);
-
+        contacorrente contacorrente2 = new contacorrente(cliente2._Nome,123,123);
+        
         #region Deposito
-         Cliente1 usuario = contacorrente.Titular:
-         System.Console.WriteLine("Byte - Depósito em Conta ");
-         System.Console.WriteLine($"Bem Vindo - {usuario.Nome}");
-         System.Console.WriteLine($"Agencia {contacorrente1.Agente} conta: {contacorrente1.numero}");
-         System.Console.WriteLine($"salto: {contacorrente.saldo}");
-         System.Console.WriteLine($"");
+            string usuario = contaCorrente1.Titular;
+            System.Console.WriteLine("ByteBank - Depósito em Conta");
+            System.Console.WriteLine($"Bem Vindo - {usuario}");
+            System.Console.WriteLine($"Agencia {contaCorrente1.Agencia} Conta: {contaCorrente1.Titular}");
+            System.Console.WriteLine($"Saldo: {contaCorrente1.Saldo}");
+            System.Console.WriteLine();
+            System.Console.WriteLine("Digite o valor do Depósito: ");
+            double valor = double.Parse(Console.ReadLine());
+            contaCorrente1.Deposito(valor);
+            System.Console.WriteLine();
+            System.Console.WriteLine($"Novo Saldo: {contaCorrente1.Saldo}");
+            System.Console.WriteLine();
 
+            
+            
         #endregion
-
-            
-            
           
             
                 }

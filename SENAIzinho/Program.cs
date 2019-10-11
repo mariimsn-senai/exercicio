@@ -8,5 +8,8 @@ namespace SENAIzinho
         {
             Sala sala = new Sala(8,10);
         }
+    public static void AlocarAluno () {
+    System.Console.WriteLine();
+    }
     }
 }
