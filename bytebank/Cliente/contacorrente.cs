@@ -5,7 +5,11 @@ namespace ByteBank.Cliente
                 public Cliente Titular{get;set;}
                 public int Agencia{get;set;}
                 public int Numero{get;set;}
-                public double saldo{get;set;}
+                public double _saldo{get;set;}
+
+                public double saldo {
+                    get { return_saldo}
+                }
 
                 
                 public contacorrente(int Numero, int Agencia, Cliente titular){
@@ -14,22 +18,6 @@ namespace ByteBank.Cliente
                 this.Titular = Titular;
                 this.saldo = 0.0;
                 } 
-                
-                //public bool Deposito(double saque){
-                //if (saque > 0) {
-                    //return true;
-                //} else {
-                    //return false;
-                //}
-                //}
-
-                //public bool transferencia(double transferencia){
-                //if (transferencia > 0) {
-                    //return true;
-                //} else {
-                    //return false;
-                //}
-                //}
                 
                 public double Deposito(double valor){
                     return this.saldo += valor;
