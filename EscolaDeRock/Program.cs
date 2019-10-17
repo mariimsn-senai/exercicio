@@ -30,43 +30,45 @@ namespace EscolaDeRock
     {
         static void Main(string[] args)
         {
-            string[] intesMenuPrincipal = Enum.GetName(typeof(FormacaoEnum));
-            string[] intesMenuCategoria = Enum.GetName(typeof(CategoriaEnum));
+            string[] intesMenuPrincipal = Enum.GetNames(typeof(FormacaoEnum));
+            string[] intesMenuCategoria = Enum.GetNames(typeof(CategoriaEnum));
 
             var opcoesFormacao = new List<string>()
             {
-                " -0   ",
-                " -1   "
+                        "    -0           ",
+                        "    -1       "
             };
 
             int opcoesFormacaoSelecionada = 0;
-            string menuBar = "===============";
-
+            string menuBar = "============================================";
+            bool querSair = true;
             do{
-                bool formacaoEscolha = false;
+                bool formacaoEscolhida = false;
                 do{
                     #region Area do menu
+                    Console.Clear();
                     System.Console.WriteLine(menuBar);
-                    System.BackgroundColor = ConsoleColor.DarkCyan;
-                    System.BackgroundColor = ConsoleColor.DarkBlack;
-                    System.Console.WriteLine("     seja bem vindo   ");
-                    System.Console.WriteLine("     Escolha  uma formação     ");
-                    Console.RasetColor();
+                    Console.BackgroundColor = ConsoleColor.Black;
+                    Console.BackgroundColor = ConsoleColor.DarkCyan;
+                    System.Console.WriteLine("          Seja bem vindo!!                ");
+                    System.Console.WriteLine("          Escolha  uma formação           ");
+                    Console.ResetColor();
                     System.Console.WriteLine(menuBar);
 
                     for(int i=0; i< opcoesFormacao.Count; i++)
                     {
-                        string titulo= itensMenuPrincipal[i];
+                        string titulo = intesMenuPrincipal[i];
                         if(opcoesFormacaoSelecionada == i)
                         {
-                            Console.BackgroundColor = Console.DarkRed;
+                            Console.BackgroundColor = ConsoleColor.DarkRed;
                             System.Console.WriteLine(opcoesFormacao[opcoesFormacaoSelecionada].Replace("-",">").Replace(i.ToString(),titulo));
+                            Console.ResetColor();
 
                         }else{
                             System.Console.WriteLine(opcoesFormacao[i].Replace(i.ToString(), titulo));
                         }
                     }
-                    var key = Console.ReadKey(true).key;
+                    var key = Console.ReadKey(true).Key;
 
                     switch(key)
                     {
@@ -78,12 +80,12 @@ namespace EscolaDeRock
                         opcoesFormacaoSelecionada = opcoesFormacaoSelecionada == opcoesFormacao.Count - 1 ? opcoesFormacaoSelecionada : ++opcoesFormacaoSelecionada;
                         break;
                         case ConsoleKey.Enter:
-                        formacaoEscolha = true;
+                        formacaoEscolhida = true;
                         break;
 
                     }
                     #endregion
-                } while(false);
+                } while(!formacaoEscolhida);
             }while(!querSair);
         }
     }

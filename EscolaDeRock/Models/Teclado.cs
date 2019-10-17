@@ -3,9 +3,9 @@ using EscolaDeRock.Interfaces;
 namespace EscolaDeRock.Models
 {
 
-        public class Teclado : IntrumentoMusical, Melodia, Harmonia
+        public class Teclado : InstrumentoMusical, Melodia, Harmonia
     {
-        public bool TocarAcorde()
+        public bool TocarAcordes()
         {
             System.Console.WriteLine("Tocando acordes do Piano");
             return true;

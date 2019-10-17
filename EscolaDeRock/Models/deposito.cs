@@ -1,10 +1,11 @@
 using System;
 using EscolaDeRock.Interfaces;
+using System.Collections.Generic;
 namespace EscolaDeRock.Models
 {
     public class deposito
     {
-        public static dictionary<int,IntrumentoMusical> Instrumentos =new Dictionary<int, Instrumentos>()
+        public static Dictionary<int,InstrumentoMusical> Instrumentos =new Dictionary<int, InstrumentoMusical>()
         {
             {1,new Baixo()},
             {2,new Bateria()},

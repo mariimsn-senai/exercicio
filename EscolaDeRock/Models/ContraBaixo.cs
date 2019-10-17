@@ -10,9 +10,10 @@ namespace EscolaDeRock.Models
             return true;
         }
 
-        public bool TocarAcorde()
+        public bool TocarAcordes()
         {
             System.Console.WriteLine("tocando acordes do contrabaixo");
+            return true;
         }
     }
 }
